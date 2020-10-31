@@ -1,0 +1,1 @@
+Thanks for using C# development settings for theRainCoders projects.

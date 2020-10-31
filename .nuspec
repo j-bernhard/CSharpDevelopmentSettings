@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- The identifier that must be unique within the hosting gallery -->
+        <id>TheRainyCoders.Csharp.Development.Settings</id>
+
+        <!-- The package version number that is used when resolving dependencies -->
+        <version>0.1.0</version>
+
+        <!-- Authors contain text that appears directly on the gallery -->
+        <authors>TheRainyCoders</authors>
+
+        <!-- 
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.  
+        -->
+        <owners>TheRainyCoders</owners>
+        
+         <!-- Project URL provides a link for the gallery -->
+        <projectUrl>https://github.com/theRainyCoders/CSharpDevelopmentSettings</projectUrl>
+
+        <repository type="git" url="https://github.com/theRainyCoders/CSharpDevelopmentSettings.git" />
+
+                    <!-- License information is displayed on the gallery -->
+        <license type="expression">MIT</license>
+
+        <!-- The icon is used in Visual Studio's package manager UI -->
+        <!--<iconUrl>http://github.com/contoso/UsefulStuff/nuget_icon.png</iconUrl>-->
+
+        <!-- 
+            If true, this value prompts the user to accept the license when
+            installing the package. 
+        -->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+        <!-- Any details about this particular release -->
+        <releaseNotes></releaseNotes>
+
+        <!-- 
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal. 
+        -->
+        <description>Includes default project settings for Resharper, StyleCop etc. .</description>
+
+        <!-- Copyright information -->
+        <copyright>Copyright 2020 TheRainyCoders</copyright>
+
+        <!-- Tags appear in the gallery and can be used for tag searches -->
+        <tags>web utility http json url parsing</tags>
+
+
+
+        <!-- Dependencies are automatically installed when the package is installed -->
+        <dependencies>
+            <dependency id="StyleCop.Analyzers" version="1.1.118" />
+        </dependencies>
+    </metadata>
+
+    <!-- A readme.txt to display when the package is installed -->
+    <files>
+        <file src="readme.txt" target="" />
+        <file src="StyleCop/stylecop.json" target="Content/StyleCop/stylecop.json" />
+    </files>
+</package>
